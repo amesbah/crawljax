@@ -21,4 +21,4 @@ jobs:
         cache: maven
     - name: Build with Maven
       #run: mvn -B package -P integrationtests --file pom.xml
-      run: mvn -B package '-Dtest=!VipsSeleniumTests' -Dsurefire.failIfNoSpecifiedTests=false -P integrationtests --file pom.xml
+      run: mvn -B package '-Dtest=!VipsSeleniumTests' -P integrationtests --file pom.xml
